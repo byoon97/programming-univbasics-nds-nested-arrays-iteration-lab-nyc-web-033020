@@ -13,12 +13,7 @@ def find_greater_pair(src)
   newArr = []
     i = 0
     while i < src.length do
-      if src[i] > src[i+1]
-        newArr << src[i]
-      elsif src[i] < src[i+1]
-        newArr << src[i+1]
-      end
-
+      newArr << src[i].maxs
       i += 1
     end
 
