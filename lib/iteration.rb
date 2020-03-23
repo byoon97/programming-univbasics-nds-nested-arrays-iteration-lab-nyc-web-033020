@@ -6,9 +6,9 @@ def join_ingredients(src)
       while element_index < src[row_index].count do
         src[row_index].each do |ele1| && src[row_index][element_index] do |ele2|
         newArr << "I love " ele1 " and " ele2 " on my pizza"
-        i += 1
+        element_index += 1
       end
-      i += 1
+      row_index += 1
     end
     return newArr
 end
