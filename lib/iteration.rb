@@ -21,7 +21,15 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
-
+  totalsum = 0
+  i = 1
+  while i < src.length do
+    if src[i][0] % 2 == 0 && src[i][1] % 2 == 0
+      pairtotal = src[i][0] += src[i][1]
+      totalsum +=  pairtotal
+    end
+    i += 1
+  end
 end
 
 # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
