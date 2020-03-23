@@ -26,10 +26,12 @@ def total_even_pairs(src)
   while i < src.length do
     if src[i][0] % 2 == 0 && src[i][1] % 2 == 0
       pairtotal = src[i][0] += src[i][1]
-      totalsum +=  pairtotal
+      totalsum += pairtotal
     end
     i += 1
   end
+
+  return totalsum
 end
 
 # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
