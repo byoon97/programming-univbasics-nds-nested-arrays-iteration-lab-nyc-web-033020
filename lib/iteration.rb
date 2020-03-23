@@ -10,7 +10,16 @@ def join_ingredients(src)
 end
 
 def find_greater_pair(src)
-  return src
+  newArr = []
+    i = 0
+    while i < src.length do
+      if src[i] > src[i+1]
+        newArr << src[i]
+      elsif src[i] < src[i+1]
+        newArr << src[i+1]
+    end
+
+  return newArr
 end
 
 def total_even_pairs(src)
