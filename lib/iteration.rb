@@ -1,8 +1,5 @@
 def join_ingredients(src)
   return src
-  end
-
-  return newArr
 end
 
 def find_greater_pair(src)
