@@ -13,7 +13,7 @@ def find_greater_pair(src)
   newArr = []
     i = 0
     while i < src.length do
-      newArr << src[i].maxs
+      newArr << src[i].max
       i += 1
     end
 
