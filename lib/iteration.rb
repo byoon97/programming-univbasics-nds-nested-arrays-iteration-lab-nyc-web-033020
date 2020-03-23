@@ -17,6 +17,9 @@ def find_greater_pair(src)
         newArr << src[i]
       elsif src[i] < src[i+1]
         newArr << src[i+1]
+      end
+
+      i += 1
     end
 
   return newArr
