@@ -1,17 +1,12 @@
 def join_ingredients(src)
   newArr = []
-  row_index = 0
-  while row_index < src.count do
-    src[row_index].each do |ele1|
-    element_index = 0
-      while element_index < src[row_index].count do
-         src[row_index][element_index] do |ele2|
-        newArr << "I love " ele1 " and " ele2 " on my pizza"
-        element_index += 1
-      end
-      row_index += 1
-    end
-    return newArr
+  i = 0
+  while i < src.length do
+    newArr << "I love #{src[i][0]} and #{src[i][1]} on my pizza"
+    i += 1
+  end
+
+  return newArr
 end
 
 def find_greater_pair(src)
